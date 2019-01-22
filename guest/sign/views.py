@@ -9,7 +9,8 @@ def index(request):
     # return HttpResponse("Hello,Django!!")
     return render(request, "index.html")
 
-#登录动作
+
+# 登录动作
 def login_action(request):
     if request.method == 'POST':
         username = request.POST.get('username', '')
